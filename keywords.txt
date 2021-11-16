@@ -1,0 +1,27 @@
+#######################################
+# Syntax Coloring Map For ezAnalogKeypad
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+ezAnalogKeypad	KEYWORD1
+buttonArray	KEYWORD1
+keypad	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+setDebounceTime	KEYWORD2
+setNoPressValue	KEYWORD2
+registerKey	KEYWORD2
+getKey	KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+ezAnalogKeypad_MAX_KEY	LITERAL1
