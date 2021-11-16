@@ -3,7 +3,7 @@
 
    This example code is in the public domain
 
-   Tutorial page: https://arduinogetstarted.com/library/arduino-analog-button-array-library
+   Tutorial page: https://arduinogetstarted.com/library/arduino-analog-button-array-example
 
    This example reads the pressed button from an array of buttons connected to single analog pin and prints it to Serial Monitor.
 */
