@@ -3,7 +3,7 @@
 
    This example code is in the public domain
 
-   Tutorial page: https://arduinogetstarted.com/tutorials/arduino-analog-keypad-library
+   Tutorial page: https://arduinogetstarted.com/library/arduino-analog-button-array-library
 
    This example reads the pressed button from an array of buttons connected to single analog pin and prints it to Serial Monitor.
 */
@@ -22,14 +22,15 @@ void setup() {
   buttonArray.registerKey(2, 341); // analog value when the button 2 is pressed
   buttonArray.registerKey(3, 256); // analog value when the button 3 is pressed
   buttonArray.registerKey(4, 205); // analog value when the button 4 is pressed
+  buttonArray.registerKey(5, 170); // analog value when the button 5 is pressed
 
-  // ADD MORE IF YOUR KEYPAD HAS MORE
+  // ADD MORE IF HAS MORE
 }
 
 void loop() {
   unsigned char button = buttonArray.getKey();
   if (button) {
-    Serial.print("Button ");
+    Serial.print("The button ");
     Serial.print(button);
     Serial.println(" is pressed");
   }

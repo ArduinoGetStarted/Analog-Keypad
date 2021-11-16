@@ -3,7 +3,7 @@
 
    This example code is in the public domain
 
-   Tutorial page: https://arduinogetstarted.com/tutorials/arduino-analog-keypad-library
+   Tutorial page: https://arduinogetstarted.com/library/arduino-analog-keypad-example
 
    This example reads the pressed key from analog keypad and prints it to Serial Monitor.
 */
