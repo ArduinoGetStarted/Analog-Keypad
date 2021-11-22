@@ -54,7 +54,7 @@ void ezAnalogKeypad::setNoPressValue(int analogValue) {
 }
 
 void ezAnalogKeypad::registerKey(unsigned char key, int analogValue) {
-	if(keyNum > ezAnalogKeypad_MAX_KEY) {
+	if(keyNum <= ezAnalogKeypad_MAX_KEY) {
 		keys[keyNum]   = key;
 		values[keyNum] = analogValue;
 		keyNum++;
