@@ -31,7 +31,7 @@ void loop() {
   unsigned char button = buttonArray.getKey();
   if (button) {
     Serial.print("The button ");
-    Serial.print(button);
+    Serial.print((int)button);
     Serial.println(" is pressed");
   }
 }
