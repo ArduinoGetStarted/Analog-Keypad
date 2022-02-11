@@ -31,8 +31,9 @@
 
 #include <ezAnalogKeypad.h>
 
-ezAnalogKeypad::ezAnalogKeypad(int pin) {
+ezAnalogKeypad::ezAnalogKeypad(int pin, int _tolerance=100) {
 	keypadPin = pin;
+	tolerance = _tolerance;
 	debounceTime = 50; // default is 50ms
 
 	lastDebounceTime = 0;
@@ -87,12 +88,12 @@ unsigned char ezAnalogKeypad::getKey() {
 	int upper_bound;
 	for(int i = 0; i < keyNum; i++) {
 		if(i == 0)
-			lower_bound = values[i] - 100; // 100 is tolerance 
+			lower_bound = values[i] - tolerance; // default tolerance value is 100
 		else
 			lower_bound = (values[i] + values[i-1]) / 2;
 
 		if(i == (keyNum - 1))
-			upper_bound = values[i] + 100; // 100 is tolerance 
+			upper_bound = values[i] + tolerance; // default tolerance is 100
 		else
 			upper_bound = (values[i] + values[i+1]) / 2;
 
