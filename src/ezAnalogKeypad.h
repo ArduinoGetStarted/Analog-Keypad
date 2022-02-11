@@ -43,6 +43,7 @@ class ezAnalogKeypad
 	private:
 		int keypadPin;
 		unsigned long debounceTime;
+		int tolerance;
 		unsigned long lastDebounceTime;
 		int keyNum;
 		int lastKeyId;
